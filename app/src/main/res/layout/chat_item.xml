@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/received_message"
-    android:backgroundTint="#1E88E5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:padding="8dp"
-    android:layout_marginStart="5dp"
-    android:layout_marginTop="4dp">
+    android:background="@drawable/bg">
 
     <LinearLayout
-        android:id="@+id/leftChatView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp">
+        android:id="@+id/left_chat_view"
+        android:background="@drawable/received_message"
+        android:backgroundTint="#181818"
+        android:padding="8dp"
+        android:layout_marginEnd="80dp"
+        >
         <TextView
-            android:id="@+id/leftChatTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintWidth_max="wrap"
-            android:text="Welcome"/>
+            android:id="@+id/left_chat_text_view"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_chat_view"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/sent_message"
+        android:backgroundTint="#2c1b7e"
+        android:padding="8dp"
+        android:layout_marginStart="80dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_chat_text_view"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
 </RelativeLayout>
