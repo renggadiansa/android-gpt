@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -11,14 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottomLayout"/>
-    
+
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Welcome to GPTChat!"
         android:gravity="center"
+        android:text="Welcome to GPTChat!\n Created By Rengga"
+        android:textColor="@color/white"
         android:textSize="28dp" />
 
     
@@ -37,7 +39,9 @@
             android:layout_toLeftOf="@id/sendBtn"
             android:background="@drawable/rounded_corner"
             android:hint="Write a message..."
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
         <ImageButton
             android:id="@+id/sendBtn"
